@@ -225,8 +225,6 @@ public class home extends AppCompatActivity {
         Animation animation = new TranslateAnimation(0, 1000,0, 0);
         animation.setDuration(100);
         animation.setFillAfter(true);
-        //myImage.startAnimation(animation);
-        //myImage.setVisibility(0);
         if(exceptThis != mRamayan)
         {
             mRamayan.setAnimation(animation);
