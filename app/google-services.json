@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "812435005865",
+    "firebase_url": "https://quikquizvizz.firebaseio.com",
+    "project_id": "quikquizvizz",
+    "storage_bucket": "quikquizvizz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812435005865:android:a6d9b3d05aec0207e0e4b8",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812435005865-k9587n4tu6pljj82a9hdnmase8tiibnp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "31425679379c054a18044e2090db8955b56144cb"
+          }
+        },
+        {
+          "client_id": "812435005865-n5fhml4j4dc8qmf8ovml9f65h1gvhq1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaDhVHypDM1hR9CaZbkesaNOHIh8qvG_M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812435005865-n5fhml4j4dc8qmf8ovml9f65h1gvhq1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

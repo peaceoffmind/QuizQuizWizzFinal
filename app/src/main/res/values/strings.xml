@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name"></string>
+    <string-array name="questionCategory">
+        <item>Ramayan</item>
+        <item>Mahabharat</item>
+        <item>BudhhaCharitra</item>
+        <item>Random</item>
+        <item>Add New Category</item>
+    </string-array>
+</resources>

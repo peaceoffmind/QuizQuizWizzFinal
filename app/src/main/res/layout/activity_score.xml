@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backwithoutheader"
+    tools:context=".Score"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SCORE"
+        android:gravity="center"
+        android:textColor="@color/textgrey"
+        android:textSize="30sp"
+        android:id="@+id/scoretitle"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="000"
+        android:gravity="center"
+        android:textColor="@color/textgrey"
+        android:textSize="30sp"
+        android:id="@+id/score"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:fontFamily="@font/avenirroman"
+        android:textSize="15sp"
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/textgrey"
+        android:layout_marginTop="50dp"
+        android:id="@+id/home"/>
+
+</LinearLayout>

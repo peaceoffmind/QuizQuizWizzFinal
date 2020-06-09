@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:orientation="vertical"
+    android:background="@drawable/backwithoutheader">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/roundbutton"
+            android:fontFamily="@font/avenirroman"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/textgrey"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/textgrey"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textgrey"
+            android:textColorHint="@color/textgrey"
+            app:layout_constraintTop_toBottomOf="@+id/getyourselftested"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/textgrey"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/textgrey"
+            android:textColorHint="@color/textgrey"
+            app:layout_constraintTop_toBottomOf="@+id/email"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/avenirroman"
+            android:gravity="center"
+            android:text="New user? Sign Up"
+            android:textColor="@color/textgrey"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <TextView
+            android:id="@+id/getyourselftested"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/avenirroman"
+            android:gravity="center"
+            android:text="Get Yourself Tested"
+            android:textColor="@color/textgrey"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/qqv"
+            tools:layout_editor_absoluteX="50dp" />
+
+        <TextView
+            android:id="@+id/qqv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/avenirroman"
+            android:gravity="center"
+            android:shadowColor="@color/textgrey"
+            android:shadowRadius="15"
+            android:text="Quick\nQuiz\nVizz"
+            android:textColor="@color/textgrey"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

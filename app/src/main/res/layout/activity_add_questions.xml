@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backwithoutheader"
+    tools:context=".AddQuestions"
+    android:paddingLeft="10sp"
+    android:orientation="vertical"
+    android:paddingRight="10sp">
+
+
+    <TextView
+        android:id="@+id/qqv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/avenirroman"
+        android:shadowColor="@color/textgrey"
+        android:shadowRadius="15"
+        android:text="Add A Question"
+        android:textColor="@color/textgrey"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/getyourselftested2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenirroman"
+        android:text="Quick Quiz VIzz"
+        android:textColor="@color/textgrey"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/textgrey"
+        android:id="@+id/category"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Category"
+        android:textColor="@color/textgrey"
+        android:textColorHint="@color/textgrey"
+        android:backgroundTint="@color/textgrey"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:id="@+id/newcategory"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Question Statement"
+        android:textColor="@color/textgrey"
+        android:textColorHint="@color/textgrey"
+        android:backgroundTint="@color/textgrey"
+        android:layout_marginTop="32dp"
+        android:id="@+id/statement"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Option 1"
+        android:textColor="@color/textgrey"
+        android:textColorHint="@color/textgrey"
+        android:backgroundTint="@color/textgrey"
+        android:layout_marginTop="32dp"
+        android:id="@+id/option1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Option 2"
+        android:textColor="@color/textgrey"
+        android:textColorHint="@color/textgrey"
+        android:backgroundTint="@color/textgrey"
+        android:layout_marginTop="32dp"
+        android:id="@+id/option2"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Option 3"
+        android:textColor="@color/textgrey"
+        android:textColorHint="@color/textgrey"
+        android:backgroundTint="@color/textgrey"
+        android:layout_marginTop="32dp"
+        android:id="@+id/option3"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Option 4"
+        android:textColor="@color/textgrey"
+        android:textColorHint="@color/textgrey"
+        android:backgroundTint="@color/textgrey"
+        android:layout_marginTop="32dp"
+        android:id="@+id/option4"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Right Answer"
+    android:textColor="@color/textgrey"
+    android:fontFamily="@font/avenirroman"
+    android:textSize="15sp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/radiogroup">
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_weight="25"
+            android:textColor="@color/textgrey"
+            android:textColorHint="@color/textgrey"
+            android:buttonTint="@color/textgrey"/>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_weight="25"
+            android:textColor="@color/textgrey"
+            android:textColorHint="@color/textgrey"
+            android:buttonTint="@color/textgrey"/>
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_weight="25"
+            android:textColor="@color/textgrey"
+            android:textColorHint="@color/textgrey"
+            android:buttonTint="@color/textgrey"/>
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_weight="25"
+            android:textColor="@color/textgrey"
+            android:textColorHint="@color/textgrey"
+            android:buttonTint="@color/textgrey"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Question"
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/textgrey"
+        android:fontFamily="@font/avenirroman"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:paddingVertical="20sp"/>
+
+</LinearLayout>

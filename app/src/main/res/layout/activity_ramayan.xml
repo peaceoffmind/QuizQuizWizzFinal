@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backwithoutheader"
+    tools:context=".Ramayan"
+    android:paddingLeft="40sp"
+    android:orientation="vertical"
+    android:paddingRight="40sp">
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/avenirroman"
+        android:shadowColor="@color/textgrey"
+        android:shadowRadius="15"
+        android:text=""
+        android:textColor="@color/textgrey"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/getyourselftested2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/avenirroman"
+        android:text="Get Yourself Tested"
+        android:textColor="@color/textgrey"
+        android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/textgrey"
+            android:paddingVertical="30sp" />
+
+        <Button
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundbuttongrey"
+            android:paddingVertical="20sp"/>
+
+        <Button
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundbuttongrey"
+            android:paddingVertical="20sp"/>
+
+        <Button
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundbuttongrey"
+            android:paddingVertical="20sp"/>
+
+        <Button
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/roundbuttongrey"
+            android:paddingVertical="20sp"/>
+
+</LinearLayout>
