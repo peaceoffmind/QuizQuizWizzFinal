@@ -217,6 +217,10 @@ public class home extends AppCompatActivity {
         mLeaderBoard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(home.this,leaderboard.class);
+                startActivity( intent);
+                finish();
+                return;
             }
         });
     }
