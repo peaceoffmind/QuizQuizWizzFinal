@@ -5,23 +5,31 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapter.LBViewHolder> {
 
-    private String[] mDataset;
+    private List<UserData> mUserList;
 
-    public recyclerViewAdapter(String[] myDataset) {
-        mDataset = myDataset;
+    public recyclerViewAdapter(List<UserData> userList) {
+        mUserList = userList;
     }
 
     public static class LBViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
-        public TextView textView;
+        public TextView displayName;
+        public TextView totalScore;
+        public TextView accuracy;
+        public TextView strikeRate;
         public LBViewHolder(View v) {
             super(v);
-            textView = v.findViewById(R.id.displayName);
+            displayName = v.findViewById(R.id.displayName);
+            totalScore = v.findViewById(R.id.totalscore);
+            accuracy = v.findViewById(R.id.accuracy);
+            strikeRate = v.findViewById(R.id.strikerate);
         }
     }
 
@@ -36,12 +44,15 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull recyclerViewAdapter.LBViewHolder holder, int position) {
-        String data = mDataset[position];
-        holder.textView.setText(data);
+        UserData user = mUserList.get(position);
+        holder.displayName.setText("DISPLAY NAME");
+        holder.totalScore.setText(user.getTotalScore());
+        holder.accuracy.setText(String.valueOf(user.getAccuracy()));
+        holder.strikeRate.setText(String.valueOf(user.getStrikeRate()));
     }
 
     @Override
     public int getItemCount() {
-        return mDataset.length;
+        return mUserList.size();
     }
 }

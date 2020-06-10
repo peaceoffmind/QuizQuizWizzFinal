@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
+    android:orientation="vertical"
     android:gravity="center">
     <TextView
         android:layout_width="match_parent"
@@ -13,5 +14,28 @@
         android:id="@+id/displayName"
         android:textSize="20sp"
         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textgrey"
+        android:text="TotalScore"
+        android:id="@+id/totalscore"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textgrey"
+        android:text="Accuracy"
+        android:id="@+id/accuracy"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textgrey"
+        android:text="StrikeRate"
+        android:id="@+id/strikerate"
+        />
+
 
 </LinearLayout>
