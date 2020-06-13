@@ -1,10 +1,14 @@
 package com.example.myapplication;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.NonNull;
@@ -12,9 +16,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapter.LBViewHolder> {
 
-    private List<UserData> mUserList;
+    private ArrayList<UserData> mUserList;
 
-    public recyclerViewAdapter(List<UserData> userList) {
+    public recyclerViewAdapter(ArrayList<UserData> userList) {
         mUserList = userList;
     }
 
@@ -26,10 +30,10 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
         public TextView strikeRate;
         public LBViewHolder(View v) {
             super(v);
-            displayName = v.findViewById(R.id.displayName);
-            totalScore = v.findViewById(R.id.totalscore);
-            accuracy = v.findViewById(R.id.accuracy);
-            strikeRate = v.findViewById(R.id.strikerate);
+            displayName = (TextView) v.findViewById(R.id.displayName);
+            totalScore = (TextView) v.findViewById(R.id.totalscore);
+            accuracy = (TextView) v.findViewById(R.id.accuracy);
+            strikeRate = (TextView) v.findViewById(R.id.strikerate);
         }
     }
 
@@ -45,10 +49,12 @@ public class recyclerViewAdapter extends RecyclerView.Adapter<recyclerViewAdapte
     @Override
     public void onBindViewHolder(@NonNull recyclerViewAdapter.LBViewHolder holder, int position) {
         UserData user = mUserList.get(position);
-        holder.displayName.setText("DISPLAY NAME");
-        holder.totalScore.setText(user.getTotalScore());
-        holder.accuracy.setText(String.valueOf(user.getAccuracy()));
-        holder.strikeRate.setText(String.valueOf(user.getStrikeRate()));
+        DecimalFormat df = new DecimalFormat("#.###");
+        df.setRoundingMode(RoundingMode.CEILING);
+        holder.displayName.setText(String.valueOf(position+1)+" : "+ user.getDisplayName());
+        holder.totalScore.setText("Total Score : " + String.valueOf(user.getTotalScore()));
+        holder.accuracy.setText("Accuracy : " + String.valueOf(df.format(user.getAccuracy())) + "%");
+        holder.strikeRate.setText("Strike Rate : "+String.valueOf(df.format(user.getStrikeRate()))+ " sec/answer");
     }
 
     @Override

@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 public class signup extends AppCompatActivity {
-    private TextView mEmail, mPassword,mNickName;
+    private TextView mEmail, mPassword, mDisplayName;
     private Button mSignUp;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener firebaseAuthStateListener;
@@ -38,7 +38,7 @@ public class signup extends AppCompatActivity {
 
         mEmail = (TextView) findViewById(R.id.email);
         mPassword = (TextView) findViewById(R.id.password);
-        mNickName = (TextView)findViewById(R.id.nickname);
+        mDisplayName = (TextView)findViewById(R.id.displayName);
         mSignUp = (Button)findViewById(R.id.signup);
         mAuth = FirebaseAuth.getInstance();
 
@@ -62,8 +62,8 @@ public class signup extends AppCompatActivity {
             public void onClick(View view) {
                 final String email = mEmail.getText().toString();
                 final String password = mPassword.getText().toString();
-                final String nickname = mNickName.getText().toString();
-                if(email.equals("") || password.equals("")|| nickname.equals(""))
+                final String displayName = mDisplayName.getText().toString();
+                if(email.equals("") || password.equals("")|| displayName.equals(""))
                     Toast.makeText(signup.this,"Please enter the required details and try again.", Toast.LENGTH_SHORT).show();
                 else {
 
@@ -82,10 +82,10 @@ public class signup extends AppCompatActivity {
                                      list.add(0);
                                      questionListMap.put(category,list);
                                  }
-                                 UserData userData = new UserData(0,0,0,0,0,questionListMap);
+                                 UserData userData = new UserData(displayName,0,0,0,0,0,questionListMap);
                                 // Write a message to the database
                                 UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder()
-                                        .setDisplayName(nickname).build();
+                                        .setDisplayName(displayName).build();
 
                                 mAuth.getCurrentUser().updateProfile(profileUpdates)
                                         .addOnCompleteListener(new OnCompleteListener<Void>() {

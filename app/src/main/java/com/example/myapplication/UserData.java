@@ -1,9 +1,12 @@
 package com.example.myapplication;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class UserData {
+    private String mDisplayName;
     private int mRightAnswers;
     private int mWrongAnswers;
     private double mStrikeRate;
@@ -15,13 +18,22 @@ public class UserData {
         //required to read data from database
     }
 
-    public UserData(int mRightAnswers, int mWrongAnswers, double mStrikeRate, int mTotalScore, double mAccuracy, Map<String, List<Integer>> mquestionListMap) {
+    public UserData(String mDisplayName,int mRightAnswers, int mWrongAnswers, double mStrikeRate, int mTotalScore, double mAccuracy, Map<String, List<Integer>> mquestionListMap) {
+        this.mDisplayName = mDisplayName;
         this.mRightAnswers = mRightAnswers;
         this.mWrongAnswers = mWrongAnswers;
         this.mStrikeRate = mStrikeRate;
         this.mTotalScore = mTotalScore;
         this.mAccuracy = mAccuracy;
         this.mquestionListMap = mquestionListMap;
+    }
+
+    public String getDisplayName() {
+        return mDisplayName;
+    }
+
+    public void setDisplayName(String mDisplayName) {
+        this.mDisplayName = mDisplayName;
     }
 
     public double getStrikeRate() {
