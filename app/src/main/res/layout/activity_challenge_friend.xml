@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backwithoutheader"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="75dp"
+    tools:context=".challengeFriend">
+
+
+    <TextView
+        android:id="@+id/challengeafriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/avenirroman"
+        android:gravity="center"
+        android:shadowColor="@color/textgrey"
+        android:shadowRadius="15"
+        android:text="Challenge A Friend"
+        android:textColor="@color/textgrey"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/getyourselftested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="170dp"
+        android:fontFamily="@font/avenirroman"
+        android:gravity="center"
+        android:text="Get Yourself Tested"
+        android:textColor="@color/textgrey"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/makeachall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make a Challenge"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundbutton"
+        android:fontFamily="@font/avenirroman"
+        android:textColor="@color/textgrey"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/acceptachall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accept a Challenge"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundbuttongrey"
+        android:fontFamily="@font/avenirroman"
+        android:textColor="@color/mainColor"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/challcreated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Challenge Created !!"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:fontFamily="@font/avenirroman"
+        android:textColor="@color/textgrey"
+        android:visibility="gone"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/gameid"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/textgrey"
+        android:ems="10"
+        android:hint="Enter the Challenge Code"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/textgrey"
+        android:textColorHint="@color/textgrey"
+        app:layout_constraintTop_toBottomOf="@+id/getyourselftested"
+        tools:layout_editor_absoluteX="50dp" />
+    <Button
+        android:id="@+id/accept"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accept"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundbuttongrey"
+        android:fontFamily="@font/avenirroman"
+        android:textColor="@color/mainColor"
+        android:textSize="15sp" />
+
+</LinearLayout>

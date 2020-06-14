@@ -42,11 +42,6 @@ public class leaderboard extends AppCompatActivity {
                    userList.add(snap.getValue(UserData.class)) ;
                 }
                 Collections.sort(userList,new UserComparator());
-                /*Collections.sort(userList, new Comparator<UserData>(){
-                    public int compare(UserData u1, UserData u2) {
-                        return u2.getTotalScore()-u1.getTotalScore();
-                    }
-                });*/
                 adapter = new recyclerViewAdapter(userList);
                 recyclerView.setAdapter(adapter);
                 layoutManager = new LinearLayoutManager(leaderboard.this);

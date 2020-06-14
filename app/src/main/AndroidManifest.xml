@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".progress"></activity>
+        <activity android:name=".challengeFriend"></activity>
+        <activity android:name=".progress" />
         <activity android:name=".leaderboard" />
         <activity android:name=".Score" />
         <activity android:name=".AddQuestions" />

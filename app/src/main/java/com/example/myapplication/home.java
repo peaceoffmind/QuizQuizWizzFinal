@@ -29,7 +29,7 @@ import java.util.List;
 
 public class home extends AppCompatActivity {
     private Button mRamayan, mMahabharat, mBudhhacharitra, mRandom,mAddQuestions;
-    private Button mLeaderBoard;
+    private Button mLeaderBoard,mChallengeAFriend;
     private TextView mWelcomeNote;
     private Button mSignOut;
     private FirebaseAuth mAuth;
@@ -54,9 +54,10 @@ public class home extends AppCompatActivity {
         mWelcomeNote = findViewById(R.id.welcomenote);
         mLeaderBoard = findViewById(R.id.leaderboard);
         progressBar = findViewById(R.id.progressBar);
+        mChallengeAFriend = findViewById(R.id.challengefriend);
 
         String displayName = mAuth.getCurrentUser().getDisplayName();
-        final String welcomeNote = "Hey! " + displayName +" Let's get stared ";
+        final String welcomeNote = "Hey! " + displayName +" Let's get started ";
         String user_id = mAuth.getCurrentUser().getUid();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("users").child(user_id);
@@ -201,6 +202,16 @@ public class home extends AppCompatActivity {
                 finish();
                 return;
 
+            }
+        });
+
+        mChallengeAFriend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(home.this,challengeFriend.class);
+                startActivity( intent);
+                finish();
+                return;
             }
         });
 

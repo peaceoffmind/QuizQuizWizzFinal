@@ -89,16 +89,26 @@
         android:text="RANDOM"
         android:textColor="@color/mainColor"
         android:textSize="15sp" />
+    <Button
+        android:id="@+id/challengefriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundbutton"
+        android:fontFamily="@font/avenirroman"
+        android:text="Challenge a Friend"
+        android:textColor="@color/textgrey"
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/addquestions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/roundbutton"
+        android:background="@drawable/roundbuttongrey"
         android:fontFamily="@font/avenirroman"
         android:text="ADD QUESTIONS"
-        android:textColor="@color/textgrey"
+        android:textColor="@color/mainColor"
         android:textSize="15sp" />
     <Button
         android:id="@+id/leaderboard"
@@ -108,14 +118,14 @@
         android:text="Leader Board"
         android:fontFamily="@font/avenirroman"
         android:textSize="15sp"
-        android:background="@drawable/roundbuttongrey"
-        android:textColor="@color/mainColor" />
+        android:background="@drawable/roundbutton"
+        android:textColor="@color/textgrey" />
     <Button
         android:id="@+id/signout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="60dp"
         android:text="Sign Out"
         android:fontFamily="@font/avenirroman"
         android:textSize="15sp"
